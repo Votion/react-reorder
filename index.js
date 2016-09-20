@@ -42,7 +42,7 @@
 
         // Allow Drag
         if (typeof this.props.allowDrag === 'function') {
-          if (this.props.allowDrag(item, index) === false) {
+          if (this.props.allowDrag(item, index, event) === false) {
             return;
           };
         }
